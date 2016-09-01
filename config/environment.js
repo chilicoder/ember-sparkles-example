@@ -6,6 +6,12 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    resizeServiceDefaults: {
+      widthSensitive: true,
+      heightSensitive: true,
+      debounceTimeout: 200,
+      injectionFactories: ['view', 'component']
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

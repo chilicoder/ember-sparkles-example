@@ -1,0 +1,17 @@
+<h3>Ember sparkles example</h3>
+{{#ember-sparkles
+data=chartContent
+input-key='name'
+output-key='value'
+
+x-scale-type='band'
+y-scale-type='linear'
+x-domain=chartColumns
+y-domain=(append 0 500)
+
+as |chart|}}
+
+
+  {{chart.bar-chart}}
+
+{{/ember-sparkles}}
